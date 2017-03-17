@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OOP</title>
+</head>
+<body>
+
+     <h1>Introduction to Object Oriented Programming!</h1>
+     <small>Instructions are  in the code! How exciting!</small>
+    <div id="paragraphs"></div>
+	<script>
+
+            // Finish the Following constructor
+
+		function Sentence(arr) {
+			this.wordsArray = arr;
+
+			this.getWordCount = function() {
+				// Find the amount of words in the sentence
+				// Completed for you, as an example.
+				return this.wordsArray.length;
+			}
+
+			this.getLetterCount = function() {
+				// Find the amount of letters in the sentence
+			}
+
+			this.reverse = function() {
+				// Reverse the sentence, in place
+			}
+
+			this.getWordAt = function(i) {
+				// Return the word at index i
+			}
+		}
+
+		/* Some Tests. Make them all pass! */
+
+		var s = new Sentence(["Hello", "I", "Am", "Computer"]);
+		console.log(s.getWordCount() === 4);
+		console.log(s.getLetterCount() === 19); //remember spaces!
+		console.log(s.getWordAt(0) === "Hello");
+		s.reverse();
+		console.log(s.getWordAt(0) === "Computer");
+
+		/*
+
+		Create a new constructor function for a Paragraph
+
+		You should be able to
+			var s2 = new Sentence (["I", "am", "not", "a", "human"]);
+			var p = new Paragraph([s, s2]);
+
+		Implement the following, including writing tests for them:
+			p.getWordCount();
+			p.getLetterCount();
+			p.getWordAt(i); // where i is some integer
+			p.getSentenceCount();
+			p.addToHTML(document.getElementById("paragraphs"));
+
+	*/
+
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
